@@ -46,7 +46,18 @@ public class MainActivity extends AppCompatActivity {
 
                 int sum = num1 + num2 + num3;
                 mTextViewResult.setText(String.valueOf(sum));
+                
+                Bundle args = new Bundle();
+                args.putString("result", String.valueOf(sum));
+
+                DialogFragment dialogFragmentImp = new DialogFragment();
+                dialogFragmentImp.setArguments(args);
+                dialogFragmentImp.show(getSupportFragmentManager(),"Display Result");
+                clearEditText();
             }
         });
+    }
+
+    private void clearEditText() {
     }
 }

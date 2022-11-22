@@ -39,7 +39,7 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="36dp"
         android:ems="10"
-        android:hint="Enter 2nd Number"
+        android:hint="@string/enter_2nd_number"
         android:inputType="number"
         android:minHeight="48dp"
         android:textAlignment="center"
